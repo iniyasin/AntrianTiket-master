@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Aku Antri</string>
+    <string name="nama">Nama</string>
+    <string name="nomor_telpon">Nomor Telpon</string>
+    <string name="alamat">Alamat</string>
+    <string name="loket_satu">Loket Satu</string>
+    <string name="loket_dua">Loket Dua</string>
+    <string name="nomor_antrian_anda_adalah">Nomor Antrian Anda Adalah</string>
+    <string name="_000">000</string>
+    <string name="silahkan_ambil_tiket_di_loket">Silahkan Ambil Tiket di Loket</string>
+    <string name="selesai">Selesai</string>
+    <string name="nomor_antrian_saat_ini_adalah">Nomor Antrian Saat Ini Adalah</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="belum_terdaftar_daftar_dibawah">Belum terdaftar? Daftar</string>
+    <string name="disini">disini</string>
+</resources>
