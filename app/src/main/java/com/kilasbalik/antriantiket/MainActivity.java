@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edTextNotelp = (EditText) findViewById(R.id.notelp);
         edTextAlamat = (EditText) findViewById(R.id.alamat);
         Button btnLoketSatu = (Button) findViewById(R.id.btn_loket_satu);
-
+        Button logout = (Button) findViewById(R.id.logout);
 
         btnLoketSatu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +38,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 edTextNama.setText("");
                 edTextNotelp.setText("");
                 edTextAlamat.setText("");
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }
