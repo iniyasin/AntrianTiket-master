@@ -5,14 +5,14 @@ public class Konfigurasi {
     //Pada tutorial Kali ini, karena kita membuat localhost maka alamatnya tertuju ke IP komputer
     //dimana File PHP tersebut berada
     //PENTING! JANGAN LUPA GANTI IP SESUAI DENGAN IP KOMPUTER DIMANA DATA PHP
-    public static final String URL_LOGIN="http://192.168.1.4/antriantiket/login.php";
-    public static final String URL_DAFTAR="http://192.168.1.4/antriantiket/daftaruser.php";
-    public static final String URL_ADD_LOKET_SATU="http://192.168.1.4/antriantiket/daftarAntrianLoketSatu.php";
-    public static final String URL_ADD_LOKET_DUA="http://192.168.1.4/antriantiket/daftarAntrianLoketDua.php";
-    public static final String URL_GET_DATA_LOKET_SATU = "http://192.168.1.4/antriantiket/tampilDataLoketSatu.php?id=";
-    public static final String URL_GET_DATA_LOKET_DUA = "http://192.168.1.4/antriantiket/tampilDataLoketDua.php?id=";
-    public static final String URL_GET_DATA_ANTRIAN_SEBELUM = "http://192.168.1.4/antriantiket/tampilDataAntrianSebelum.php?id=";
-    public static final String URL_GET_DATA_ANTRIAN_SEBELUM_2 = "http://192.168.1.4/antriantiket/tampilDataAntrianSebelum_2.php?id=";
+    public static final String URL_LOGIN="http://192.168.1.2/antriantiket/login.php";
+    public static final String URL_DAFTAR="http://192.168.1.2/antriantiket/daftaruser.php";
+    public static final String URL_ADD_LOKET_SATU="http://192.168.1.2/antriantiket/daftarAntrianLoketSatu.php";
+    public static final String URL_ADD_LOKET_DUA="http://192.168.1.2/antriantiket/daftarAntrianLoketDua.php";
+    public static final String URL_GET_DATA_LOKET_SATU = "http://192.168.1.2/antriantiket/tampilDataLoketSatu.php?id=";
+    public static final String URL_GET_DATA_LOKET_DUA = "http://192.168.1.2/antriantiket/tampilDataLoketDua.php?id=";
+    public static final String URL_GET_DATA_ANTRIAN_SEBELUM = "http://192.168.1.2/antriantiket/tampilDataAntrianSebelum.php?id=";
+    public static final String URL_GET_DATA_ANTRIAN_SEBELUM_2 = "http://192.168.1.2/antriantiket/tampilDataAntrianSebelum_2.php?id=";
 
     //Dibawah ini merupakan Kunci yang akan digunakan untuk mengirim permintaan ke Skrip PHP
     public static final String KEY_ID = "id";
@@ -33,6 +33,7 @@ public class Konfigurasi {
     public static final String TAG_EMAIL = "email";
     public static final String TAG_PASSWORD = "password";
     public static final String LOGIN_SUCCESS = "success";
+    public static final String DAFTAR_SUCCESS = "berhasil";
 
     //ID karyawan
     //emp itu singkatan dari Employee

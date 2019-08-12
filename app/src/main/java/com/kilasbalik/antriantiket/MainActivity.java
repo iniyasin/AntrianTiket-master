@@ -32,12 +32,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnLoketSatu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LoketSatu.class);
-                startActivity(intent);
-                daftarAntrianLoketSatu();
-                edTextNama.setText("");
-                edTextNotelp.setText("");
-                edTextAlamat.setText("");
+                if (edTextNama.getText().toString().trim().equals("")){
+                    edTextNama.setError("Nama Harus Diisi!");
+                }
+                if (edTextNotelp.getText().toString().trim().equals("")){
+                    edTextNotelp.setError("Nomor Telepon Harus Diisi!!!");
+                }
+                if (edTextAlamat.getText().toString().trim().equals("")){
+                    edTextAlamat.setError("Alamat Harus Diisi!!!");
+                }
+                else {
+                    Intent intent = new Intent(MainActivity.this, LoketSatu.class);
+                    startActivity(intent);
+                    daftarAntrianLoketSatu();
+                    edTextNama.setText("");
+                    edTextNotelp.setText("");
+                    edTextAlamat.setText("");
+                }
             }
         });
 

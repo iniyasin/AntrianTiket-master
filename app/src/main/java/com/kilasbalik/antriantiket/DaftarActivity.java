@@ -10,6 +10,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.toolbox.StringRequest;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
 
 public class DaftarActivity extends AppCompatActivity {
@@ -34,6 +41,18 @@ public class DaftarActivity extends AppCompatActivity {
         btn_daftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (nama.getText().toString().trim().equals("")){
+                    nama.setError("Nama tidak boleh kosong!!!");
+                }
+                if (notelp.getText().toString().trim().equals("")){
+                    notelp.setError("Nomor Telepon tidak boleh kosong!!!");
+                }
+                if (email.getText().toString().trim().equals("")){
+                    email.setError("Nama tidak boleh kosong!!!");
+                }
+                if (password.getText().toString().trim().equals("")){
+                    password.setError("Nama tidak boleh kosong!!!");
+                }
                Daftar();
             }
         });
@@ -75,6 +94,7 @@ public class DaftarActivity extends AppCompatActivity {
                 return rh.sendPostRequest(Konfigurasi.URL_DAFTAR, params);
             }
         }
+
         Daftar da = new Daftar();
         da.execute();
     }

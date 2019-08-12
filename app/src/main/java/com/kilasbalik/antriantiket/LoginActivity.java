@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,7 +55,19 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                login();
+                //validasi dulu sebelum login
+                if (email.getText().toString().trim().equals("")){
+                    email.setError("Email tidak boleh kosong!");
+                }
+                if (password.getText().toString().trim().equals("")){
+                    password.setError("Password tidak boleh kosong!");
+                }
+                if (!Patterns.EMAIL_ADDRESS.matcher(email.getText().toString().trim()).matches()){
+                    email.setError("Format alamat email salah!");
+                }
+                else {
+                    login();
+                }
             }
         });
     }
@@ -77,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                         } else {
                             hideDialog();
                             //menampilkan error message pada toast
-                            Toast.makeText(context, "invalid email or password", Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, "Email atau Password Salah!!!", Toast.LENGTH_LONG).show();
                         }
                     }
                 },
